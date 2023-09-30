@@ -946,3 +946,8 @@ section:nth-child(odd) .animate.scroll,
         width: 0;
     }
 }
+
+iframe {
+    display: inline;
+    padding-left: 25px;
+}
