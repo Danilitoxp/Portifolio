@@ -1,282 +1,364 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danilo Oliveira | Portifólio</title>
+    <title>Danilo Oliveira | Portfolio de Design & Marketing</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
 
-    <!-- box icons -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- header design -->
+    <!-- Header Design -->
     <header class="header">
-        <a href="#" class="logo">Danilo Oliveira<span class="animate" style="--i:1;"></span></a>
+        <a href="#" class="logo">DANILO <span>OLIVEIRA</span></a>
 
-        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
 
         <nav class="navbar">
-            <a href="#home" class="active">Inicio</a>
+            <a href="#home" class="active">Início</a>
             <a href="#about">Sobre</a>
-            <a href="#education">Educação</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#contact">Contato</a>
-
-            <span class="active-nav"></span>
-            <span class="animate" style="--i:2;"></span>
+            <a href="#events">Designs</a>
+            <a href="#results">Resultados</a>
+            <a href="#tools">Ferramentas</a>
+            <a href="#mockups">Mockups</a>
         </nav>
     </header>
 
-    <!-- home section design -->
-    <section class="home show-animate" id="home">
+    <!-- Home Section Design -->
+    <section class="home" id="home">
+        <div class="grid-overlay"></div>
+
         <div class="home-content">
-            <h1>Olá, eu sou o <span>Danilo</span><span class="animate" style="--i:2;"></span></h1>
-            <div class="text-animate">
-                <h3>Frontend Developer</h3>
-                <span class="animate" style="--i:3;"></span>
+            <div class="pill-badge">
+                <span class="pulse-dot"></span>
+                <span>Marketing & Social Media | Jundiaí - SP</span>
             </div>
-            <p>Alavancando empresas na concepção e desenvolvimento de produtos digitais de excelência, por meio das
-                minhas habilidades especializadas em JavaScript, HTML e CSS. Transformando visões em realidade por meio
-                de códigos criativos e designs envolventes.
-                <span class="animate" style="--i:4;"></span>
+
+            <div class="title-container">
+                <h1 class="main-title">PORTFÓLIO</h1>
+                <div class="glass-caption">DANILO OLIVEIRA</div>
+            </div>
+
+            <p class="subtitle">
+                Estrategista de marketing "mão na massa" e criador de campanhas promocionais que aumentam o consumo, o engajamento e o faturamento de negócios presenciais e locais.
             </p>
 
             <div class="btn-box">
-                <a href="https://github.com/Danilitoxp?tab=repositories" target="_blank" class="btn"><i
-                        class='bx bxs-chat'></i>Projetos</a>
-                <a href="./Documents/Danilo Oliveira - Curriculo.pdf" class="btn"><i
-                        class='bx bxs-download'></i>Currículo</a>
-                <span class="animate" style="--i:5;"></span>
+                <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20de%20design"
+                    target="_blank" class="btn btn-primary"><i class='bx bxs-chat'></i>Fazer Orçamento</a>
+                <a href="#events" class="btn btn-outline">Ver Trabalhos <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/danilooliveiraxp/" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Danilitoxp" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.youtube.com/channel/UC6pRNDrT97BC1WT8SWNfD7g" target="_blank"><i
+                        class='bx bxl-youtube'></i></a>
             </div>
         </div>
 
-        <div class="home-sci">
-            <a href="https://www.linkedin.com/in/danilooliveiraxp/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/Danilitoxp" target="_blank"><i class='bx bxl-github'></i></i></a>
-            <a href="https://www.youtube.com/channel/UC6pRNDrT97BC1WT8SWNfD7g" target="_blank"><i
-                    class='bx bxl-youtube'></i></a>
-            <span class="animate" style="--i:6;"></span>
-        </div>
+        <div class="home-showcase">
+            <div class="designer-photo-wrapper">
+                <img src="images/about.jpeg" alt="Danilo Oliveira" class="designer-photo">
+                <div class="photo-glow"></div>
+            </div>
 
-        <div class="home-imgHover"></div>
-        <span class="animate home-img" style="--i:7;"></span>
+            <!-- Floating Adobe Tools -->
+            <div class="floating-badge badge-ps" style="--i:1;">
+                <span class="badge-icon">Ps</span>
+                <span class="badge-text">Photoshop</span>
+            </div>
+            <div class="floating-badge badge-ai" style="--i:2;">
+                <span class="badge-icon">Ai</span>
+                <span class="badge-text">Illustrator</span>
+            </div>
+            <div class="floating-badge badge-pr" style="--i:3;">
+                <span class="badge-icon">Pr</span>
+                <span class="badge-text">Premiere</span>
+            </div>
+            <div class="floating-badge badge-ae" style="--i:4;">
+                <span class="badge-icon">Ae</span>
+                <span class="badge-text">After Effects</span>
+            </div>
+        </div>
     </section>
 
-    <!-- about section design -->
+    <!-- About / Who Am I Section -->
     <section class="about" id="about">
-        <h2 class="heading">Sobre <span>mim</span><span class="animate scroll" style="--i:1;"></span></h2>
+        <div class="about-container">
+            <div class="about-text-block">
+                <span class="section-tag">INTRODUÇÃO</span>
+                <h2 class="heading">Who am I? <br><span>Quem sou eu?</span></h2>
 
-        <div class="about-img">
-            <img src="images/about.jpg" alt="">
-            <span class="circle-spin"></span>
-            <span class="animate scroll" style="--i:2;"></span>
-        </div>
-
-        <div class="about-content">
-            <h3>Frontend Developer!<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>Como profissional, meu objetivo é aprimorar a presença online das empresas. Com experiência em design
-                gráfico, busco criar interfaces de usuário cativantes e funcionais, unindo minha paixão pelo design à
-                missão de proporcionar uma experiência superior na web para as empresas.
-                <span class="animate scroll" style="--i:4;"></span>
-            </p>
-
-            <p>
-                <iframe width="380" style="margin-right: 20px;" height="231"
-                    src="https://www.youtube.com/embed/iYHTL3NK1kc?si=urZkuXyBeYU9HFYU" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-
-                <iframe width="380" style="margin-right: 20px;" height="231"
-                    src="https://www.youtube.com/embed/EEXPglaJmKs?si=AR-lkbUl_xy-QnVL" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-
-                <iframe width="380" style="margin-right: 20px;" height="231"
-                    src="https://www.youtube.com/embed/uzmz_qPsAjs?si=zbkRomupPbDHS4m0" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-
-
-                <span class="animate scroll" style="--i:4;"></span>
-            </p>
-
-            <div class="btn-box btns">
-                <a href="#" class="btn">Saber Mais</a>
-                <span class="animate scroll" style="--i:5;"></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- education section design -->
-    <section class="education" id="education">
-        <h2 class="heading">Minha <span>Jornada</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Educação<span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2026</div>
-                            <h3>Descomplica - Análise e Desenvolvimento de Sistemas</h3>
-                            <p>Sou graduado em Análise e Desenvolvimento de Sistemas pela Faculdade Descomplica. Minha
-                                formação me capacita para analisar, projetar e desenvolver soluções tecnológicas
-                                eficientes e inovadoras.</p>
-                        </div>
-                        <span class="animate scroll" style="--i:3;"></span>
-                    </div>
-                </div>
-
-                <div class="education-column">
-                    <h3 class="title">Experiências<span class="animate scroll" style="--i:5;"></span></h3>
-
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
-                                <h3>Web Developer - freelancer</h3>
-                                <p>Como freelancer, desenvolvi websites personalizados para empresas, usando JavaScript,
-                                    CSS, HTML e Node.js. Entreguei soluções web de alta qualidade, focando nas
-                                    necessidades de cada cliente e proporcionando experiências de usuário excepcionais.
-                                </p>
-                            </div>
-                        </div>
-                        <span class="animate scroll" style="--i:6;"></span>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- skills section design -->
-    <section class="skills" id="skills">
-        <h2 class="heading">Minhas <span>Habilidades</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Habilidades de Codificação<span class="animate scroll" style="--i:2;"></span></h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>CSS <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>JavaScript <span>65%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Python <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+                <div class="about-content">
+                    <div class="about-desc en-desc">
+                        <h4>English</h4>
+                        <p>
+                            I'm Danilo Oliveira, a marketing strategist and designer with 5+ years of hands-on
+                            experience in retail, local businesses, and visual communication. I specialize in developing
+                            food marketing campaigns, promotional combos, and digital menus designed to improve visual
+                            communication and engage customers.
+                        </p>
                     </div>
 
-                    <span class="animate scroll" style="--i:3;"></span>
-                </div>
-            </div>
-
-            <div class="skills-column">
-                <h3 class="title">Habilidades Profissionais<span class="animate scroll" style="--i:5;"></span></h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Web Design <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Web Development <span>67%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Graphic Design <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>SEO Marketing <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+                    <div class="about-desc pt-desc">
+                        <h4>Português</h4>
+                        <p>
+                            Sou o Danilo Oliveira, profissional de marketing e designer com mais de 5 anos de
+                            experiência prática ("mão na massa") no varejo, negócios presenciais e comunicação visual.
+                            Sou especialista em criar campanhas promocionais, combos e materiais de ponto de venda
+                            focados em melhorar a comunicação visual e atrair o público.
+                        </p>
                     </div>
-
-                    <span class="animate scroll" style="--i:6;"></span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Entre em <span>Contato!</span><span class="animate scroll" style="--i:1;"></span></h2>
+    <!-- Event Design Section -->
+    <section class="events" id="events">
+        <div class="section-header">
+            <span class="section-tag"><i class='bx bxs-star'></i> DESIGNS & PROMOÇÕES</span>
+            <h2 class="heading">MARKETING <span>PROMOCIONAL</span></h2>
+            <p class="section-desc">Ações práticas, combos e flyers criados para aumentar o faturamento e consumo de
+                produtos no varejo e ponto de venda.</p>
+        </div>
 
-        <form action="https://formsubmit.co/danilooliveira.contato@hotmail.com" method="POST">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" name="Nome" placeholder="Nome Completo" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="email" name="email" placeholder="Endereço de Email" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="tel" name="Celular" placeholder="Número de Telefone" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" name="Assunto" placeholder="Assunto" required>
-                    <span class="focus"></span>
+        <div class="events-grid">
+            <!-- Combo Cantina -->
+            <div class="portfolio-card">
+                <div class="card-img-container">
+                    <img src="images/imagem1.png" alt="Combo do Dia - Cantina">
+                    <div class="card-overlay">
+                        <div class="card-info">
+                            <span class="card-category">Alimentação & Varejo</span>
+                            <h3>Combo do Dia - Cantina</h3>
+                            <p>Photoshop / Criação de Ofertas</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="textarea-field">
-                <textarea name="Mensagem" id="" cols="30" rows="10" placeholder="Escreva sua Mensagem..."
-                    required></textarea>
-                <span class="focus"></span>
+            <!-- Cardápio Saudável -->
+            <div class="portfolio-card">
+                <div class="card-img-container">
+                    <img src="images/imagem2.png" alt="Cardápio Saudável Cantina">
+                    <div class="card-overlay">
+                        <div class="card-info">
+                            <span class="card-category">Comunicação Visual</span>
+                            <h3>Cardápio Saudável</h3>
+                            <p>Illustrator / Menu Digital</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Enviar</button>
+            <!-- Volta às Aulas -->
+            <div class="portfolio-card">
+                <div class="card-img-container">
+                    <img src="images/imagem3.png" alt="Campanha Volta às Aulas">
+                    <div class="card-overlay">
+                        <div class="card-info">
+                            <span class="card-category">Campanha Escolar</span>
+                            <h3>Volta às Aulas Cantina</h3>
+                            <p>Photoshop / Promoção Prática</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </form>
+            <!-- Event 4 -->
+            <div class="portfolio-card">
+                <div class="card-img-container">
+                    <img src="images/imagem4.png" alt="Flyer Nightclub Premium">
+                    <div class="card-overlay">
+                        <div class="card-info">
+                            <span class="card-category">Marketing de Eventos</span>
+                            <h3>Golden Night Campaign</h3>
+                            <p>Photoshop / Branding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="portfolio-card">
+                <div class="card-img-container">
+                    <img src="images/imagem5.png" alt="Festival de Música Eletrônica">
+                    <div class="card-overlay">
+                        <div class="card-info">
+                            <span class="card-category">Festivais & Lançamentos</span>
+                            <h3>Cosmic Sounds Festival</h3>
+                            <p>Photoshop / Motion & Key Art</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 6 -->
+            <div class="portfolio-card">
+                <div class="card-img-container">
+                    <img src="images/imagem6.png" alt="Flyer de Evento Esportivo">
+                    <div class="card-overlay">
+                        <div class="card-info">
+                            <span class="card-category">Marketing Esportivo</span>
+                            <h3>Match Day - Showdown</h3>
+                            <p>Photoshop / Campanha de Engajamento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results" id="results">
+        <div class="section-header">
+            <span class="section-tag"><i class='bx bx-trending-up'></i> DESEMPENHO</span>
+            <h2 class="heading">NOSSOS <span>RESULTADOS</span></h2>
+            <p class="section-desc">Estratégias de tráfego pago estruturadas para conversão e retorno real sobre o investimento.</p>
+        </div>
+
+        <div class="results-container">
+            <div class="result-card">
+                <div class="result-badge">Google Ads</div>
+                <div class="result-header">
+                    <h3>Empresa de Elétrica & Hidráulica</h3>
+                    <p class="result-niche">Serviços Residenciais & Comerciais de Urgência</p>
+                </div>
+                
+                <div class="result-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">R$ 5.000</span>
+                        <span class="stat-label">Investido em Mídia</span>
+                    </div>
+                    <div class="stat-box highlight">
+                        <span class="stat-number">+R$ 50.000</span>
+                        <span class="stat-label">Faturamento Gerado</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">10x</span>
+                        <span class="stat-label">Retorno (ROAS)</span>
+                    </div>
+                </div>
+
+                <p class="result-details">
+                    Campanha estratégica de Google Ads estruturada para captação de leads qualificados no Google Pesquisa. Com anúncios focados em intenção de compra imediata (serviços de urgência de elétrica e hidráulica), otimizamos o custo por clique (CPC) e aumentamos as conversões diretas no WhatsApp comercial, gerando alta eficiência e ROI expressivo de 10x.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools" id="tools">
+        <div class="section-header">
+            <span class="section-tag"><i class='bx bxs-briefcase'></i> WORKFLOW</span>
+            <h2 class="heading">FERRAMENTAS QUE <span>DOMINO</span></h2>
+            <p class="section-desc">Softwares e plataformas que utilizo diariamente para dar vida a projetos de alta
+                qualidade e performance visual.</p>
+        </div>
+
+        <div class="tools-grid">
+            <!-- Photoshop -->
+            <div class="tool-card tool-ps">
+                <div class="tool-icon-wrapper">
+                    <span class="tool-abbr">Ps</span>
+                </div>
+                <h3>Photoshop</h3>
+                <p>Edição avançada, tratamento profissional de fotos e manipulação de imagens para flyers e criativos.
+                </p>
+            </div>
+
+            <!-- Illustrator -->
+            <div class="tool-card tool-ai">
+                <div class="tool-icon-wrapper">
+                    <span class="tool-abbr">Ai</span>
+                </div>
+                <h3>Illustrator</h3>
+                <p>Criação de vetores, ilustrações, identidades visuais de alta definição e elementos de branding.</p>
+            </div>
+
+            <!-- Premiere -->
+            <div class="tool-card tool-pr">
+                <div class="tool-icon-wrapper">
+                    <span class="tool-abbr">Pr</span>
+                </div>
+                <h3>Premiere</h3>
+                <p>Edição profissional de vídeos, cortes dinâmicos, correção de cor (color grading) e sincronia de
+                    áudio.</p>
+            </div>
+
+            <!-- CapCut -->
+            <div class="tool-card tool-cc">
+                <div class="tool-icon-wrapper">
+                    <span class="tool-abbr">Cc</span>
+                </div>
+                <h3>CapCut</h3>
+                <p>Edição ágil de vídeos curtos, reels, tiktok, transições dinâmicas e legendas automáticas animadas.
+                </p>
+            </div>
+
+            <!-- Canva -->
+            <div class="tool-card tool-cv">
+                <div class="tool-icon-wrapper">
+                    <span class="tool-abbr">Cv</span>
+                </div>
+                <h3>Canva</h3>
+                <p>Criação rápida de posts corporativos, apresentações de impacto e compartilhamento de templates
+                    editáveis.</p>
+            </div>
+
+            <!-- Figma -->
+            <div class="tool-card tool-fg">
+                <div class="tool-icon-wrapper">
+                    <i class='bx bxl-figma'></i>
+                </div>
+                <h3>Figma</h3>
+                <p>Prototipagem interativa de layouts web, interfaces UI/UX e design colaborativo de landing pages.</p>
+            </div>
+        </div>
     </section>
 
 
-    <!-- footer design -->
-    <footer class="footer">
-        <div class="footer-text">
-            <span class="animate scroll" style="--i:1;"></span>
+
+    <!-- Mockups & Presentations Section -->
+    <section class="mockups" id="mockups">
+        <div class="section-header">
+            <span class="section-tag"><i class='bx bxs-devices'></i> REALISMO</span>
+            <h2 class="heading">MOCKUPS & <span>FEED</span></h2>
+            <p class="section-desc">Veja como os projetos se comportam nos dispositivos reais dos clientes.</p>
         </div>
 
-        <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-
-            <span class="animate scroll" style="--i:3;"></span>
+        <div class="mockup-display">
+            <div class="mockup-wrapper">
+                <img src="images/mockup_instagram.png" alt="Mockup Instagram Danilo" class="mockup-img">
+                <div class="instagram-overlay-stats">
+                    <div class="heart-pulse"><i class='bx bxs-heart'></i> +4,289</div>
+                    <div class="comment-pulse"><i class='bx bxs-comment'></i> +184</div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+
+
+
 
 
     <script src="js/script.js"></script>

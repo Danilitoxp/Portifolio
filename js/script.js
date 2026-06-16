@@ -1,4 +1,4 @@
-// toggle icon navbar
+// Toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -7,7 +7,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-// scroll sections
+// Scroll sections active link
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -19,38 +19,54 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
-            // active navbar links
             navLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+                let targetLink = document.querySelector('header nav a[href*=' + id + ']');
+                if (targetLink) {
+                    targetLink.classList.add('active');
+                }
             });
-            // active sections for animation on scroll
-            sec.classList.add('show-animate');
-        }
-        // if want to use animation that repeats on scroll use this
-        else {
-            sec.classList.remove('show-animate');
         }
     });
 
-    // sticky header
+    // Sticky header
     let header = document.querySelector('header');
-
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    // remove toggle icon and navbar when click navbar links (scroll)
+    // Remove toggle icon and navbar when click navbar links (scroll)
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
+}
 
-    // animation footer on scroll
-    let footer = document.querySelector('footer');
-    let scrollable = document.documentElement.scrollHeight - window.innerHeight;
-    let scrolled = window.scrollY;
+// Behance Likes Interaction
+const btnLike = document.getElementById('btn-like');
+const likeCountSpan = document.getElementById('like-count');
 
-    if (Math.ceil(scrolled) === scrollable) {
-        footer.classList.add('show-animate');
+if (btnLike && likeCountSpan) {
+    let likes = parseInt(localStorage.getItem('danilo_portfolio_likes')) || 148;
+    let liked = localStorage.getItem('danilo_portfolio_liked') === 'true';
+
+    // Update initial view
+    likeCountSpan.textContent = likes;
+    if (liked) {
+        btnLike.classList.add('active');
+        btnLike.innerHTML = `<i class='bx bxs-hand'></i> Curtiu! (${likes})`;
     }
-    else {
-        footer.classList.remove('show-animate');
-    }
+
+    btnLike.addEventListener('click', () => {
+        if (!liked) {
+            likes++;
+            liked = true;
+            btnLike.classList.add('active');
+            btnLike.innerHTML = `<i class='bx bxs-hand'></i> Curtiu! (${likes})`;
+        } else {
+            likes--;
+            liked = false;
+            btnLike.classList.remove('active');
+            btnLike.innerHTML = `<i class='bx bxs-hand'></i> Curtir Projeto (${likes})`;
+        }
+        likeCountSpan.textContent = likes;
+        localStorage.setItem('danilo_portfolio_likes', likes);
+        localStorage.setItem('danilo_portfolio_liked', liked);
+    });
 }
